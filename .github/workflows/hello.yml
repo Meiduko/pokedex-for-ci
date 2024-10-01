@@ -1,4 +1,4 @@
-name: Say hellow
+name: Say hello
 
 on:
   push:
@@ -12,3 +12,6 @@ jobs:
       - name: Echo the message
         run: |
           echo "Hola midu!"
+      - name: Dime la fecha
+        run: date
+      - run: ls -l
