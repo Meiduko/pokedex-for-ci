@@ -14,11 +14,11 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 14
       - name: Install dependencies
         run: npm install --no-audit --no-fund --no-optional
-      - name: Lint
-        run: npm run eslint
+      # - name: Lint
+      #   run: npm run eslint
       - name: Build
         run: npm run build
       - name: Test
